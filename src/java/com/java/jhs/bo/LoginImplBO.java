@@ -5,7 +5,7 @@
 package com.java.jhs.bo;
 
 import com.java.jdbc.dao.ImplLogin;
-import com.java.jhs.persistence.Login;
+import com.java.jhs.persistence.User;
 import com.java.jsf.bean.BeanLogin;
 /**
  *
@@ -29,11 +29,11 @@ public class LoginImplBO implements LoginBO {
     
     @Override
     public void validaLogin(BeanLogin obj) {
-        Login login = new Login();
-        login.setUsuario(obj.getUsuario());
-        login.setPassword(obj.getPassword());
-        login = getLoginDAO().validaLogin(login);
-        if(login != null) {
+        User user = new User();
+        user.setUsuario(obj.getUsuario());
+        user.setPassword(obj.getPassword());
+        user = getLoginDAO().validaLogin(user);
+        if(user != null) {
             obj.setStatus(true);
             obj.setMensaje("Usuario encontrado");
         } else {

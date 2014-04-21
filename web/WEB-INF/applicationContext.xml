@@ -53,7 +53,7 @@
 
         <property name="mappingResources">
            <list>
-              <value>/com/java/jhs/persistence/Login.hbm.xml</value>
+              <value>/com/java/jhs/persistence/User.hbm.xml</value>
            </list>
         </property>
     </bean>

@@ -81,15 +81,13 @@ public class BeanLogin {
             setListaUsuarios(new ArrayList<BeanLogin>());
             sessionMap.put("listaUsuarios", getListaUsuarios());
             sessionMap.put("usuarioLogeado", this);*/
-            if(getUsuario().equals("Sergio")) {
-                return "portfolio";
-            } else if(getUsuario().equals("Java")) {
+           
                 return "index";
-            }
+            
         } else {
             return "login";
         }
-        return "login";
+       
     }
 
     /**

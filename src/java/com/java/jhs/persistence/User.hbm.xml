@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 17-abr-2014 16:47:26 by Hibernate Tools 3.2.1.GA -->
+<!-- Generated 20-abr-2014 21:01:55 by Hibernate Tools 3.2.1.GA -->
 <hibernate-mapping>
-    <class name="com.java.jhs.persistence.Login" table="login" catalog="schoolhelp">
+    <class name="com.java.jhs.persistence.User" table="user" catalog="schoolhelp">
         <id name="id" type="java.lang.Long">
             <column name="id" />
             <generator class="identity" />

@@ -1,8 +1,8 @@
 package com.java.jdbc.dao;
 
-import com.java.jhs.persistence.Login;
+import com.java.jhs.persistence.User;
 
 public interface IfaceLogin {
-    Login validaLogin(Login obj);
+    User validaLogin(User obj);
 }
 
